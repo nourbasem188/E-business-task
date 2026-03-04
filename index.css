@@ -1,45 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(250, 243, 234);
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
 }
-#main_head {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 30px;
-    padding: 5px;
 
+.main_head h1 {
+    margin: 20px 0 40px 40px;
+    font-size: 2.5rem;
 }
+
+.container {
+    width: 1100px; 
+    max-width: 95vw;
+    margin: auto;
+}
+
 ul {
-    display: flex;
-    gap: 80px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 40px; 
+    list-style: none;
 }
 
 li {
-    list-style: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    color: rgb(0, 0, 0);
+    position: relative; 
+    margin-bottom: 30px;
+}
+
+.main {
+    position: relative;
+    margin-bottom: 30px; 
 }
 
 .img {
-    width: 250px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
+    display: block;
 }
-div .text_box {
-    width: 250px;
-    height: 150px;
-    border-radius: 8px;
+
+
+.btn {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #d37e46;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    position: absolute;
+    bottom: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    align-items:center;
-}
-.inside h4 {
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: 0.3s;
     font-family: "Poppins", sans-serif;
-  font-weight: 350;
-  font-style: normal;
 }
-.inside  .price {
-    color:#ff5500;
+
+.btn:hover {
+    border-color: #ff5500;
+    color: #ff5500;
+}
+
+.text_box {
+    margin-top: 25px;
+}
+
+.cat {
+    color: #87635a;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.inside h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.price {
+    color: #ff5500;
+    font-weight: 700;
+}
+
+
+button .btn_icon {
+    width: 20px;
+    height: 20px;
+    color: #ff5500;
 }
